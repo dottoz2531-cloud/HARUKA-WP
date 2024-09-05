@@ -90,9 +90,9 @@
               <?php the_post_thumbnail(); ?>
               </div>
               <div class="gallery-card__text">
-               <?php 
+                <p class="card-text"><?php 
                $category = get_the_category();?>
-                <p class="card-text"><?php the_title();?></p>
+               <?php echo $category[0]->cat_name; ?></p>
               </div>
             </a>
             <?php endwhile;?>
