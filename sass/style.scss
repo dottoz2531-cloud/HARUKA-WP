@@ -692,8 +692,16 @@ main {
 
 //gallery page
 
-.gallery__sub-menu {
+.gallery_main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include mq(md) {
+    gap: 60px;
+  }
 }
+
 
 .sub-menu__inner {
   margin-block: 40px;
@@ -726,6 +734,7 @@ main {
 .sub-item {
   position: relative;
   padding: 5px 20px;
+  border: solid 1px #fff;
   background-color: rgba(255, 158, 228, 0.9);
 
   &:hover {
@@ -780,7 +789,7 @@ main {
 }
 
 .cake-cards {
-  margin-block: 50px;
+  margin-block: 90px;
 }
 
 .cake__cards {
@@ -788,4 +797,25 @@ main {
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
   gap: 5px;
+}
+.cake-card {
+  img {
+    width: 100%;
+    .cake-cards {
+      margin-block: 50px;
+    }
+
+    .cake__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      gap: 5px;
+    }
+    .cake-card {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }

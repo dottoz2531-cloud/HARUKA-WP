@@ -97,9 +97,9 @@
             </a>
             <?php endwhile;?>
            <?php endif;?>
-            
           </div>
         </div>
+        <?php var_dump($category[0]); ?>
       </section>
 
       <section id="contact" class="contact">
