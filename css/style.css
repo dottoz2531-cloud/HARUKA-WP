@@ -525,7 +525,6 @@ main {
   width: 100%;
   height: 25%;
   position: absolute;
-  background-color: rgba(255, 158, 228, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,47 +547,50 @@ main {
     font-size: 22px;
   }
 }
-.gallery-card__text:hover {
+.gallery-card__text.cake {
+  background-color: rgba(255, 158, 228, 0.4);
+}
+.gallery-card__text.cake:hover {
   background-color: rgba(255, 158, 228, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.gallery-card__text--type2 {
+.gallery-card__text.cookie {
   background-color: rgba(106, 184, 228, 0.4);
 }
-.gallery-card__text--type2:hover {
+.gallery-card__text.cookie:hover {
   background-color: rgba(106, 184, 228, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.gallery-card__text--type3 {
+.gallery-card__text.capcake {
   background-color: rgba(106, 228, 214, 0.4);
 }
-.gallery-card__text--type3:hover {
+.gallery-card__text.capcake:hover {
   background-color: rgba(106, 228, 214, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.gallery-card__text--type4 {
+.gallery-card__text.oshikatu {
   background-color: rgba(238, 223, 86, 0.4);
 }
-.gallery-card__text--type4:hover {
+.gallery-card__text.oshikatu:hover {
   background-color: rgba(238, 223, 86, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.gallery-card__text--type5 {
+.gallery-card__text.event {
   background-color: rgba(228, 158, 106, 0.4);
 }
-.gallery-card__text--type5:hover {
+.gallery-card__text.event:hover {
   background-color: rgba(228, 158, 106, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.gallery-card__text--type6 {
+.gallery-card__text.other {
   background-color: rgba(86, 104, 217, 0.4);
 }
-.gallery-card__text--type6:hover {
+.gallery-card__text.other:hover {
   background-color: rgba(86, 104, 217, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;

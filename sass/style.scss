@@ -508,7 +508,6 @@ main {
   width: 100%;
   height: 25%;
   position: absolute;
-  background-color: rgba(255, 158, 228, 0.4);
   display: flex;
   text-align: center;
   align-items: center;
@@ -524,12 +523,15 @@ main {
     font-size: 22px;
   }
 
-  &:hover {
-    background-color: rgba(255, 158, 228, 0.8);
-    transition: 0.5s;
+  &.cake {
+    background-color: rgba(255, 158, 228, 0.4);
+    &:hover {
+      background-color: rgba(255, 158, 228, 0.8);
+      transition: 0.5s;
+    }
   }
 
-  &--type2 {
+  &.cookie {
     background-color: rgba(106, 184, 228, 0.4);
     &:hover {
       background-color: rgba(106, 184, 228, 0.8);
@@ -537,7 +539,7 @@ main {
     }
   }
 
-  &--type3 {
+  &.capcake {
     background-color: rgba(106, 228, 214, 0.4);
     &:hover {
       background-color: rgba(106, 228, 214, 0.8);
@@ -545,7 +547,7 @@ main {
     }
   }
 
-  &--type4 {
+  &.oshikatu {
     background-color: rgba(238, 223, 86, 0.4);
     &:hover {
       background-color: rgba(238, 223, 86, 0.8);
@@ -553,7 +555,7 @@ main {
     }
   }
 
-  &--type5 {
+  &.event {
     background-color: rgba(228, 158, 106, 0.4);
     &:hover {
       background-color: rgba(228, 158, 106, 0.8);
@@ -561,7 +563,7 @@ main {
     }
   }
 
-  &--type6 {
+  &.other {
     background-color: rgba(86, 104, 217, 0.4);
     &:hover {
       background-color: rgba(86, 104, 217, 0.8);
@@ -701,7 +703,6 @@ main {
     gap: 60px;
   }
 }
-
 
 .sub-menu__inner {
   margin-block: 40px;

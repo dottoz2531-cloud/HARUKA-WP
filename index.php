@@ -89,9 +89,10 @@
               <div class="gallery-card__img">
               <?php the_post_thumbnail(); ?>
               </div>
-              <div class="gallery-card__text">
-                <p class="card-text"><?php 
+              <?php 
                $category = get_the_category();?>
+              <div class="gallery-card__text <?php echo $category[0]->slug; ?>">
+                <p class="card-text">
                <?php echo $category[0]->cat_name; ?></p>
               </div>
             </a>
@@ -99,7 +100,6 @@
            <?php endif;?>
           </div>
         </div>
-        <?php var_dump($category[0]); ?>
       </section>
 
       <section id="contact" class="contact">

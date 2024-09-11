@@ -37,22 +37,22 @@
           </h2>
           <div class="cake__cards cake-cards">
             <div class="cake-card">
-              <img src="<?php echo get_template_directory_uri() ?>/img/img-concept/1.png" alt="" class="cake-card" />
+              <img src="<?php echo get_template_directory_uri() ?>/img/img-cake/cake-1.png" alt="" class="cake-card" />
             </div>
             <div class="cake-card">
-              <img src="<?php echo get_template_directory_uri() ?>/img/img-concept/4.png" alt="" class="cake-card" />
+              <img src="<?php echo get_template_directory_uri() ?>/img/img-cake/cake-2.png" alt="" class="cake-card" />
             </div>
             <div class="cake-card">
-              <img src="<?php echo get_template_directory_uri() ?>/img/img-concept/6.png" alt="" class="cake-card" />
+              <img src="<?php echo get_template_directory_uri() ?>/img/img-cake/cake-3.png" alt="" class="cake-card" />
             </div>
             <div class="cake-card">
-              <img src="<?php echo get_template_directory_uri() ?>/img/img-concept/1.png" alt="" class="cake-card" />
+              <img src="<?php echo get_template_directory_uri() ?>/img/img-cake/cake-4.png" alt="" class="cake-card" />
             </div>
             <div class="cake-card">
-              <img src="<?php echo get_template_directory_uri() ?>/img/img-concept/4.png" alt="" class="cake-card" />
+              <img src="<?php echo get_template_directory_uri() ?>/img/img-cake/cake-5.png" alt="" class="cake-card" />
             </div>
             <div class="cake-card">
-              <img src="<?php echo get_template_directory_uri() ?>/img/img-concept/6.png" alt="" class="cake-card" />
+              <img src="<?php echo get_template_directory_uri() ?>/img/img-cake/cake-6.png" alt="" class="cake-card" />
             </div>
           </div>
         </div>
