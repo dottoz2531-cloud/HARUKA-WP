@@ -448,7 +448,6 @@ main {
           flex-direction: column;
   text-align: center;
   gap: 15px;
-  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .concept__texts {
@@ -538,7 +537,7 @@ main {
   left: 0;
   bottom: 0;
   color: white;
-  font-size: 17px;
+  font-size: 19px;
   overflow: hidden;
   border-radius: 0 0 10px 10px;
 }
@@ -826,9 +825,14 @@ main {
 
 .cake__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   text-align: center;
   gap: 5px;
+}
+@media screen and (min-width: 768px) {
+  .cake__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .cake-card img {
@@ -836,14 +840,4 @@ main {
 }
 .cake-card img .cake-cards {
   margin-block: 50px;
-}
-.cake-card img .cake__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-  gap: 5px;
-}
-.cake-card img .cake-card img {
-  width: 100%;
-  height: auto;
 }
