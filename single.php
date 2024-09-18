@@ -6,6 +6,9 @@
           <ul class="sub-items">
             <div class="sub-items1">
               <li class="sub-item">
+              <?php if(have_posts()): ?>
+                      <?php while(have_posts()) :?>
+                        <?php the_post(); ?>
                 <a href="<?php the_permalink(); ?>" class="item_link">CAKE</a>
               </li>
               <li class="sub-item sub-item--type2">
@@ -25,6 +28,8 @@
               <li class="sub-item sub-item--type6">
                 <a href="" class="item_link">OTHER</a>
               </li>
+              <?php endwhile;?>
+           <?php endif;?>
             </div>
           </ul>
         </div>
@@ -32,9 +37,14 @@
 
       <div class="gallery-cake">
         <div class="inner">
+        <?php if (have_posts()) :  ?>
+                    <?php while(have_posts()) :  ?>
+                        <?php the_post(); ?>
           <h2 class="heading heading--type js-in-view fade-in-up">
-            CAKE GALLERY
+          <?php the_title(); ?>
           </h2>
+          <?php endwhile; ?>
+           <?php endif; ?>
           <div class="cake__cards cake-cards">
             <div class="cake-card">
               <img src="<?php echo get_template_directory_uri() ?>/img/img-cake/cake-1.png" alt="" class="cake-card" />
