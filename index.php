@@ -9,10 +9,9 @@
         </div>
       </div>
 
-      <section id="cocept" class="concept">
-        <div class="cocept__inner inner">
-          <h2 class="heading section__head js-in-view fade-in-up">CONCEPT</h2>
-
+      <section id="concept" class="concept">
+        <div class="concept__inner inner">
+          <h2 class="heading concept__heading js-in-view fade-in-up">CONCEPT</h2>
           <div class="concept__slider">
             <!-- Slider main container -->
             <div id="js-concept-swiper" class="swiper concept__swiper">

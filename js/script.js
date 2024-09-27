@@ -35,6 +35,12 @@ inViewItems.forEach(function (inViewItem) {
   intersectionObserver.observe(inViewItem);
 });
 
+document.querySelectorAll(".js-nav-link").forEach((link) => {
+  if (link.href === haruka - hp.local) {
+    link.classList.add("active");
+  }
+});
+
 const swiper = new Swiper("#js-concept-swiper", {
   loopAdditionalSlides: 2,
   spaceBetween: 4,

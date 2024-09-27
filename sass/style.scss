@@ -5,8 +5,8 @@ $text-color: #9a8b92;
 
 $font-base: "Noto Serif JP", "Poppins";
 
-$header-hight-sp: 60px;
-$header-hight-pc: 80px;
+$header-hight-sp: 70px;
+$header-hight-pc: 90px;
 
 $breakpoints: (
   sm: "screen and (min-width: 600px)",
@@ -88,7 +88,7 @@ main {
   line-height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
 
   @include mq(md) {
@@ -98,7 +98,7 @@ main {
 
   &::after {
     content: "";
-    width: 160px;
+    width: 60px;
     height: 3px;
     background: #fff;
 
@@ -106,7 +106,7 @@ main {
     }
 
     @include mq(md) {
-      width: 320px;
+      width: 80px;
       height: 5px;
     }
   }
@@ -362,13 +362,13 @@ main {
   background: $main-color;
 }
 
-.cocept__inner {
+.concept__inner {
 }
 
 .heading-contact {
 }
 
-.section__head {
+.concept__heading {
 }
 
 .concept__slider {
@@ -402,6 +402,7 @@ main {
   img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
   }
 }
 
@@ -594,14 +595,7 @@ main {
     font-size: 60px;
   }
 
-  &::after {
-    content: "";
-    width: 290px;
 
-    @include mq(md) {
-      width: 650px;
-    }
-  }
 }
 
 .contact__line {
@@ -785,11 +779,8 @@ main {
   }
 }
 
-.gallery-cake {
-}
-
-.cake-cards {
-  margin-block: 90px;
+.gallery-page__cards {
+  margin-block: 60px;
 }
 
 .cake__cards {

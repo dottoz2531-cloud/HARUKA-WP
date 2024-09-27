@@ -70,7 +70,7 @@
             </ul>
             <ul class="header__lists">
               <li class="header__list">
-                <a href="#cocept" class="header__link">CONCEPT</a>
+                <a href="#concept" class="header__link js-nav-link">CONCEPT</a>
               </li>
               <li class="header__list">
                 <a href="#gallery" class="header__link">GALLERY</a>
