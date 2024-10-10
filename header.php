@@ -70,13 +70,13 @@
             </ul>
             <ul class="header__lists">
               <li class="header__list">
-                <a href="#concept" class="header__link js-nav-link">CONCEPT</a>
+                <a href="<?php echo esc_url( home_url( '/' ) );?>#concept" class="header__link js-nav-link">CONCEPT</a>
               </li>
               <li class="header__list">
-                <a href="#gallery" class="header__link">GALLERY</a>
+                <a href="<?php echo esc_url( home_url( '/' ) );?>#gallery" class="header__link">GALLERY</a>
               </li>
               <li class="header__list">
-                <a href="#contact" class="header__link">CONTACT & ORDER</a>
+                <a href="<?php echo esc_url( home_url( '/' ) );?>#contact" class="header__link">CONTACT & ORDER</a>
               </li>
             </ul>
           </div>

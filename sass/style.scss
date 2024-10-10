@@ -332,10 +332,10 @@ main {
 //fv
 .fv {
   background: #fff;
-  padding-bottom: 28px;
+  padding-bottom: 60px;
 
   @include mq(md) {
-    padding-bottom: 90px;
+    padding-block: 1100px;
   }
 }
 
@@ -348,11 +348,11 @@ main {
 
   img {
     width: 320px;
-    margin-top: 22px;
+    margin-top: 60px;
 
     @include mq(md) {
       width: 570px;
-      margin-top: 70px;
+      margin-top: 90px;
     }
   }
 }
@@ -594,8 +594,6 @@ main {
   @include mq(md) {
     font-size: 60px;
   }
-
-
 }
 
 .contact__line {

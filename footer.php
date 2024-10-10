@@ -1,7 +1,9 @@
 <footer class="footer">
       <div class="footer__inner inner">
         <div class="footer__logo">
-          <img src="<?php echo get_template_directory_uri()?>/img/shoplogo.png" alt="" />
+        <a href="/"
+            ><img src="<?php echo get_template_directory_uri()?>/img/shoplogo.png" alt="Haruka kawaii shop"
+          /></a>
         </div>
       </div>
     </footer>
