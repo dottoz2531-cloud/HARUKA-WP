@@ -349,11 +349,11 @@ main {
 
 .fv {
   background: #fff;
-  padding-bottom: 28px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .fv {
-    padding-bottom: 90px;
+    padding-block: 1100px;
   }
 }
 
@@ -363,12 +363,12 @@ main {
 }
 .fv__image img {
   width: 320px;
-  margin-top: 22px;
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .fv__image img {
     width: 570px;
-    margin-top: 70px;
+    margin-top: 90px;
   }
 }
 
