@@ -3,8 +3,8 @@
     <main class="main">
       <div class="fv">
         <div class="fv__inner inner">
-          <picture class="fv__image">
-            <img src="<?php echo get_template_directory_uri()?>/img/shopmark.png" alt="" />
+          <picture class="fv__image js-in-view fade-in-up">
+            <img src="<?php echo get_template_directory_uri()?>/img/shoplogo.png" alt="" />
           </picture>
         </div>
       </div>
@@ -101,6 +101,80 @@
         </div>
       </section>
 
+      <section class="genre">
+        <div class="genre__inner">
+          <h2 class="heading heading--type2 js-in-view fade-in-up">GENRES</h2>
+          <div class="genre__cards">
+            <a href="" class="genre__card genre-card">
+              <div class="genre-card__img">
+                <img
+                  src="<?php echo get_template_directory_uri()?>/img/img-gallery/cake.png"
+                  alt=""
+                />
+              </div>
+              <div class="genre-card__text">
+                <p class="genre-text">WEDDING</p>
+              </div>
+            </a>
+            <a href="" class="genre__card genre-card">
+              <div class="genre-card__img">
+                <img
+                  src="<?php echo get_template_directory_uri()?>/img/img-gallery/cake.png"
+                  alt=""
+                />
+              </div>
+              <div class="genre-card__text">
+                <p class="genre-text">WEDDING</p>
+              </div>
+            </a>
+            <a href="" class="genre__card genre-card">
+              <div class="genre-card__img">
+                <img
+                  src="<?php echo get_template_directory_uri()?>/img/img-gallery/cake.png"
+                  alt=""
+                />
+              </div>
+              <div class="genre-card__text">
+                <p class="genre-text">WEDDING</p>
+              </div>
+            </a>
+            <a href="" class="genre__card genre-card">
+              <div class="genre-card__img">
+                <img
+                  src="<?php echo get_template_directory_uri()?>/img/img-gallery/cake.png"
+                  alt=""
+                />
+              </div>
+              <div class="genre-card__text">
+                <p class="genre-text">WEDDING</p>
+              </div>
+            </a>
+            <a href="" class="genre__card genre-card">
+              <div class="genre-card__img">
+                <img
+                  src="<?php echo get_template_directory_uri()?>/img/img-gallery/cake.png"
+                  alt=""
+                />
+              </div>
+              <div class="genre-card__text">
+                <p class="genre-text">WEDDING</p>
+              </div>
+            </a>
+            <a href="" class="genre__card genre-card">
+              <div class="genre-card__img">
+                <img
+                  src="<?php echo get_template_directory_uri()?>/img/img-gallery/cake.png"
+                  alt=""
+                />
+              </div>
+              <div class="genre-card__text">
+                <p class="genre-text">WEDDING</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="contact">
         <div class="contact__inner inner">
           <h2 class="heading heading-contact js-in-view fade-in-up">
@@ -122,3 +196,81 @@
     </main>
     
     <?php get_footer(); ?>
+
+
+    <section id="#other" class="other">
+          <div class="other__inner">
+            <h2 class="heading other__head heading--type2">OTHER</h2>
+            <div class="other__slider">
+              <!-- Slider main container -->
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="other-card">
+                      <a href="" class="other-card__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/works/works-img1.png" alt="" />
+                      </a>
+                      <div class="other-card__text">Profile site</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="other-card">
+                      <a href="" class="other-card__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/works/works-img2.png" alt="" />
+                      </a>
+                      <div class="other-card__text">Shop site</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="other-card">
+                      <a href="" class="other-card__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/works/works-img3.png" alt="" />
+                      </a>
+                      <div class="other-card__text">OHA!(架空)</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="other-card">
+                      <a href="" class="other-card__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/works/works-img4.png" alt="" />
+                      </a>
+                      <div class="other-card__text">sobolon(架空)</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="other-card">
+                      <a href="" class="other-card__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/works/works-img1.png" alt="" />
+                      </a>
+                      <div class="other-card__text">Profile site</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="other-card">
+                      <a href="" class="other-card__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/works/works-img2.png" alt="" />
+                      </a>
+                      <div class="other-card__text">Shop site</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="other-card">
+                      <a href="" class="other-card__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/works/works-img3.png" alt="" />
+                      </a>
+                      <div class="other-card__text">OHA!(架空)</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="other-card">
+                      <a href="" class="other-card__img">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/works/works-img4.png" alt="" />
+                      </a>
+                      <div class="other-card__text">sobolon(架空)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>

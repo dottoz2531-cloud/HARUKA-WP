@@ -335,7 +335,7 @@ main {
   padding-bottom: 60px;
 
   @include mq(md) {
-    padding-block: 1100px;
+    padding-block: 50px 150px;
   }
 }
 
@@ -481,9 +481,9 @@ main {
 
   @include mq(md) {
     margin-top: 50px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    padding-inline: calc(80px / 1200px * 100%);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-inline: calc(30px / 1200px * 100%);
   }
 }
 
@@ -532,9 +532,9 @@ main {
   }
 
   &.cookie {
-    background-color: rgba(106, 184, 228, 0.4);
+    background-color: rgba(238, 223, 86, 0.4);
     &:hover {
-      background-color: rgba(106, 184, 228, 0.8);
+      background-color: rgba(238, 223, 86, 0.8);
       transition: 0.5s;
     }
   }
@@ -547,23 +547,7 @@ main {
     }
   }
 
-  &.oshikatu {
-    background-color: rgba(238, 223, 86, 0.4);
-    &:hover {
-      background-color: rgba(238, 223, 86, 0.8);
-      transition: 0.5s;
-    }
-  }
-
-  &.event {
-    background-color: rgba(228, 158, 106, 0.4);
-    &:hover {
-      background-color: rgba(228, 158, 106, 0.8);
-      transition: 0.5s;
-    }
-  }
-
-  &.other {
+  &.semi-order {
     background-color: rgba(86, 104, 217, 0.4);
     &:hover {
       background-color: rgba(86, 104, 217, 0.8);
@@ -572,8 +556,93 @@ main {
   }
 }
 
-//contact
+//genre
+.genre {
+  background: #fff;
+  border-radius: 20px;
+  margin-inline: 15px;
 
+  @include mq(md) {
+    border-radius: 50px;
+    margin-inline: 70px;
+  }
+}
+
+.genre__inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(md) {
+    padding-top: 95px;
+    padding-bottom: 30px;
+  }
+}
+
+.genre__cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: 10px;
+  padding-inline: 15px;
+
+  @include mq(md) {
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: calc(70px / 1200px * 100%);
+  }
+}
+
+.genre__card {
+  position: relative;
+  box-shadow: 3px 3px 15px 0px rgba(96, 96, 96, 0.16);
+  border-radius: 0 0 10px 10px;
+}
+
+.genre-card__img {
+
+  @include mq(md) {
+    flex-shrink: 0;
+  }
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.genre-card__text {
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  color: #ffff;
+  font-size: 19px;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+
+  @include mq(md) {
+    font-size: 22px;
+  }
+
+  &.wedding {
+    background-color: rgba(255, 158, 228, 0.4);
+    &:hover {
+      background-color: rgba(255, 158, 228, 0.8);
+      transition: 0.5s;
+    }
+  }
+}
+
+.genre-text {
+}
+
+//contact
 .contact {
 }
 
@@ -735,9 +804,9 @@ main {
   }
 
   &--type2 {
-    background-color: rgba(106, 184, 228, 0.9);
+    background-color: rgba(238, 223, 86, 0.9);
     &:hover {
-      background-color: rgba(106, 184, 228, 0.4);
+      background-color: rgba(238, 223, 86, 0.4);
       transition: 0.5s;
     }
   }
@@ -751,29 +820,11 @@ main {
   }
 
   &--type4 {
-    background-color: rgba(238, 223, 86, 0.9);
-    &:hover {
-      background-color: rgba(238, 223, 86, 0.4);
-      transition: 0.5s;
-    }
-  }
-
-  &--type5 {
-    background-color: rgba(228, 158, 106, 0.9);
-    &:hover {
-      background-color: rgba(228, 158, 106, 0.4);
-      transition: 0.5s;
-    }
-  }
-
-  &--type6 {
     background-color: rgba(86, 104, 217, 0.9);
     &:hover {
       background-color: rgba(86, 104, 217, 0.4);
       transition: 0.5s;
     }
-  }
-  a {
   }
 }
 

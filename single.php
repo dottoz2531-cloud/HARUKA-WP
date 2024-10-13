@@ -22,13 +22,7 @@
             </div>
             <div class="sub-items2">
               <li class="sub-item sub-item--type4">
-                <a href="<?php the_permalink(36); ?>" class="item_link">EVENT</a>
-              </li>
-              <li class="sub-item sub-item--type5">
-                <a href="<?php the_permalink(37); ?>" class="item_link">OSHIKATU</a>
-              </li>
-              <li class="sub-item sub-item--type6">
-                <a href="<?php the_permalink(10); ?>" class="item_link">OTHER</a>
+                <a href="<?php the_permalink(36); ?>" class="item_link">SEMI-ORDER</a>
               </li>
               <?php endwhile;?>
            <?php endif;?>
