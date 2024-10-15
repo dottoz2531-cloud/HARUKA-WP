@@ -349,11 +349,11 @@ main {
 
 .fv {
   background: #fff;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 @media screen and (min-width: 768px) {
   .fv {
-    padding-block: 50px 150px;
+    padding-block: 70px 170px;
   }
 }
 

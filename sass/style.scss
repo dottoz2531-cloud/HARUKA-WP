@@ -332,10 +332,10 @@ main {
 //fv
 .fv {
   background: #fff;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 
   @include mq(md) {
-    padding-block: 50px 150px;
+    padding-block: 70px 170px;
   }
 }
 
@@ -600,7 +600,6 @@ main {
 }
 
 .genre-card__img {
-
   @include mq(md) {
     flex-shrink: 0;
   }
