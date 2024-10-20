@@ -87,6 +87,9 @@ main {
   font-size: 33px;
   font-weight: 450;
   line-height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .heading-main {
@@ -96,6 +99,9 @@ main {
 
 .heading-sub {
   font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .heading-sub {
@@ -606,10 +612,10 @@ main {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.item-card__text.capcake {
+.item-card__text.cup-cake {
   background-color: rgba(106, 228, 214, 0.4);
 }
-.item-card__text.capcake:hover {
+.item-card__text.cup-cake:hover {
   background-color: rgba(106, 228, 214, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -745,19 +751,19 @@ main {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.genre-card__text.threed {
+.genre-card__text.three {
   background-color: rgba(151, 47, 255, 0.4);
 }
-.genre-card__text.threed:hover {
+.genre-card__text.three:hover {
   background-color: rgba(151, 47, 255, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .genre-card__text.oshikatu {
-  background-color: rgba(255, 164, 84, 0.4);
+  background-color: rgba(159, 255, 175, 0.4);
 }
 .genre-card__text.oshikatu:hover {
-  background-color: rgba(255, 164, 84, 0.8);
+  background-color: rgba(159, 255, 175, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -769,19 +775,19 @@ main {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.genre-card__text.animal {
-  background-color: rgba(159, 255, 175, 0.4);
+.genre-card__text.animals {
+  background-color: rgba(255, 164, 84, 0.4);
 }
-.genre-card__text.animal:hover {
-  background-color: rgba(159, 255, 175, 0.8);
+.genre-card__text.animals:hover {
+  background-color: rgba(255, 164, 84, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.genre-card__text.fruits {
-  background-color: rgba(255, 91, 225, 0.4);
+.genre-card__text.fruits-cake {
+  background-color: rgba(151, 47, 255, 0.4);
 }
-.genre-card__text.fruits:hover {
-  background-color: rgba(255, 91, 225, 0.8);
+.genre-card__text.fruits-cake:hover {
+  background-color: rgba(151, 47, 255, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -794,10 +800,10 @@ main {
   transition: 0.5s;
 }
 .genre-card__text.kawaii {
-  background-color: rgba(151, 47, 255, 0.4);
+  background-color: rgba(255, 91, 225, 0.4);
 }
 .genre-card__text.kawaii:hover {
-  background-color: rgba(151, 47, 255, 0.8);
+  background-color: rgba(255, 91, 225, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1023,4 +1029,80 @@ main {
 }
 .cake-card img .cake-cards {
   margin-block: 50px;
+}
+
+.genre__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .genre__main {
+    gap: 60px;
+  }
+}
+
+.genre-menu__inner {
+  margin-block: 45px;
+  margin-inline: 20px;
+}
+@media screen and (min-width: 768px) {
+  .genre-menu__inner {
+    margin-block: 45px;
+    margin-inline: 50px;
+  }
+}
+
+.genre-sub__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .genre-sub__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.genre-sub__item {
+  color: white;
+  font-size: 15px;
+  padding: 5px 20px;
+  border: solid 1px #fff;
+  background-color: rgb(255, 128, 232);
+}
+.genre-sub__item:hover {
+  background-color: #ffeff8;
+  color: rgb(255, 128, 232);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media screen and (min-width: 768px) {
+  .genre-sub__item {
+    font-size: 19px;
+    padding: 5px 12px;
+  }
+}
+
+.genre-gallery__cards {
+  margin-block: 60px;
+}
+.genre-gallery__cards img {
+  width: 100%;
+}
+.genre-gallery__cards img .cake-cards {
+  margin-block: 50px;
+}
+
+.wp-block-heading {
+  font-size: 20px;
+  color: #9a8b92;
 }

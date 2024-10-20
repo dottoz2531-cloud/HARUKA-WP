@@ -33,11 +33,13 @@
 
       <div class="gallery-cake">
         <div class="inner">
+        <div class="heading js-in-view fade-in-up">
         <?php if (have_posts()) :  ?>
                     <?php while(have_posts()) :  ?>
                         <?php the_post(); ?>
-          <h2 class="heading heading--type js-in-view fade-in-up">
+          <h2 class=" heading-main">
           <?php the_title(); ?>
+          <p class="heading-sub"></p>
           </h2>
           <?php endwhile; ?>
           <?php endif; ?>

@@ -117,104 +117,33 @@
                 <h3 class="title-main">GENRE</h3>
                 <p class="title-sub">ジャンル</p>
               </div>
+              
               <div class="genre__cards">
-                <a href="" class="genre__card genre-card">
+              <?php
+                 $term_var = get_the_terms($post->ID, 'genre');
+                 $related_query = new WP_Query(
+                  array(
+                  'post_type' => 'genre',
+                  'posts_per_page' => '12',
+                    )
+                  );
+               ?>
+               <?php if ( $related_query->have_posts() ) : ?>
+                <?php while ( $related_query->have_posts() ) : $related_query->the_post();?>
+                <a href="<?php the_permalink(); ?>" class="genre__card genre-card">
                   <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/cake.png" alt="" />
+                  <?php the_post_thumbnail(); ?>
                   </div>
-                  <div class="genre-card__text event">
-                    <p class="genre-text">EVENT</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text wedding">
-                    <p class="genre-text">WEDDING</p>
+                  <?php $category = get_the_category();?>
+                  <div class="genre-card__text <?php echo $category[0]->slug; ?>">
+                    <p class="genre-text"><?php echo $category[0]->cat_name; ?></p>
                   </div>
                 </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text baby">
-                    <p class="genre-text">BABY</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text ribon">
-                    <p class="genre-text">RIBON</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text flower">
-                    <p class="genre-text">FLOWER</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text threed">
-                    <p class="genre-text">3D</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text oshikatu">
-                    <p class="genre-text">OSHIKATU</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text vehicle">
-                    <p class="genre-text">VEHICLE</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img vehicle">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text animal">
-                    <p class="genre-text">ANIMAL</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text fruits">
-                    <p class="genre-text">MANY FRUITS</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text saengle">
-                    <p class="genre-text">SAENGLE CAKE</p>
-                  </div>
-                </a>
-                <a href="" class="genre__card genre-card">
-                  <div class="genre-card__img">
-                    <img src="<?php echo get_template_directory_uri()?>/img/img-gallery/others.png" alt="" />
-                  </div>
-                  <div class="genre-card__text kawaii">
-                    <p class="genre-text">KAWAII</p>
-                  </div>
-                </a>
+                <?php endwhile;?>
+               <?php endif;?>
+               <?php wp_reset_postdata(); ?>
               </div>
+              
             </div>
           </div>
         </div>

@@ -97,6 +97,7 @@ main {
   font-size: 33px;
   font-weight: 450;
   line-height: 100%;
+  align-items: center;
 
   @include mq(md) {
     font-size: 55px;
@@ -105,6 +106,7 @@ main {
 
 .heading-sub {
   font-size: 12px;
+  align-items: center;
 
   @include mq(md) {
     font-size: 16px;
@@ -565,7 +567,7 @@ main {
     }
   }
 
-  &.capcake {
+  &.cup-cake {
     background-color: rgba(106, 228, 214, 0.4);
     &:hover {
       background-color: rgba(106, 228, 214, 0.8);
@@ -673,6 +675,7 @@ main {
       transition: 0.5s;
     }
   }
+
   &.ribon {
     background-color: rgba(255, 91, 225, 0.4);
     &:hover {
@@ -687,17 +690,18 @@ main {
       transition: 0.5s;
     }
   }
-  &.threed {
+  &.three {
     background-color: rgba(151, 47, 255, 0.4);
     &:hover {
       background-color: rgba(151, 47, 255, 0.8);
       transition: 0.5s;
     }
   }
+
   &.oshikatu {
-    background-color: rgba(255, 164, 84, 0.4);
+    background-color: rgba(159, 255, 175, 0.4);
     &:hover {
-      background-color: rgba(255, 164, 84, 0.8);
+      background-color: rgba(159, 255, 175, 0.8);
       transition: 0.5s;
     }
   }
@@ -708,17 +712,18 @@ main {
       transition: 0.5s;
     }
   }
-  &.animal {
-    background-color: rgba(159, 255, 175, 0.4);
+  &.animals {
+    background-color: rgba(255, 164, 84, 0.4);
     &:hover {
-      background-color: rgba(159, 255, 175, 0.8);
+      background-color: rgba(255, 164, 84, 0.8);
       transition: 0.5s;
     }
   }
-  &.fruits {
-    background-color: rgba(255, 91, 225, 0.4);
+
+  &.fruits-cake {
+    background-color: rgba(151, 47, 255, 0.4);
     &:hover {
-      background-color: rgba(255, 91, 225, 0.8);
+      background-color: rgba(151, 47, 255, 0.8);
       transition: 0.5s;
     }
   }
@@ -730,9 +735,9 @@ main {
     }
   }
   &.kawaii {
-    background-color: rgba(151, 47, 255, 0.4);
+    background-color: rgba(255, 91, 225, 0.4);
     &:hover {
-      background-color: rgba(151, 47, 255, 0.8);
+      background-color: rgba(255, 91, 225, 0.8);
       transition: 0.5s;
     }
   }
@@ -948,4 +953,81 @@ main {
       margin-block: 50px;
     }
   }
+}
+
+//genre
+
+.genre__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 40px;
+
+  @include mq(md) {
+    gap: 60px;
+  }
+}
+
+.genre__menu {
+}
+
+.genre-menu__inner {
+  margin-block: 45px;
+  margin-inline: 20px;
+
+  @include mq(md) {
+    margin-block: 45px;
+    margin-inline: 50px;
+  }
+}
+
+.genre-sub__box {
+}
+
+.genre-sub__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.genre-sub__item {
+  color: #ffff;
+  font-size: 15px;
+  padding: 5px 20px;
+  border: solid 1px #fff;
+  background-color: rgba(255, 128, 232);
+
+  &:hover {
+    background-color: $main-color;
+    color: rgba(255, 128, 232);
+    transition: 0.5s;
+  }
+
+  @include mq(md) {
+    font-size: 19px;
+    padding: 5px 12px;
+  }
+}
+
+.genre__gallery {
+}
+
+.genre-gallery__cards {
+  margin-block: 60px;
+  img {
+    width: 100%;
+    .cake-cards {
+      margin-block: 50px;
+    }
+  }
+}
+
+.wp-block-heading {
+  font-size: 20px;
+  color: $text-color;
 }
