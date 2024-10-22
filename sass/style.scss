@@ -386,12 +386,11 @@ main {
 }
 
 .concept__inner {
-}
-
-.heading-contact {
+  
 }
 
 .concept__heading {
+  font-weight: 450;
 }
 
 .concept__slider {
@@ -460,7 +459,7 @@ main {
 
   @include mq(md) {
     margin-top: 80px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -507,7 +506,7 @@ main {
   gap: 10px;
   padding-inline: 15px;
 
-  @include mq(md) {
+  @include mq(lg) {
     margin-top: 20px;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -543,12 +542,15 @@ main {
   left: 0;
   bottom: 0;
   color: #ffff;
-  font-size: 16px;
+  font-size: 17px;
   overflow: hidden;
   border-radius: 0 0 10px 10px;
 
   @include mq(md) {
-    font-size: 22px;
+    font-size: 18px;
+  }
+  @include mq(lg) {
+    font-size: 20px;
   }
 
   &.cake {
@@ -591,7 +593,7 @@ main {
 
   @include mq(md) {
     margin-top: 70px;
-    margin-inline: 70px;
+    margin-inline: 55px;
   }
 }
 
@@ -647,11 +649,11 @@ main {
   border-radius: 0 0 10px 10px;
 
   @include mq(md) {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   @include mq(lg) {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   &.event {
@@ -766,6 +768,7 @@ main {
 
   @include mq(md) {
     font-size: 60px;
+    font-weight: 450;
   }
 }
 

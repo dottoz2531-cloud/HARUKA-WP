@@ -421,6 +421,10 @@ main {
   background: #ffeff8;
 }
 
+.concept__heading {
+  font-weight: 450;
+}
+
 .concept__slider {
   margin-top: 30px;
 }
@@ -498,7 +502,7 @@ main {
 @media screen and (min-width: 768px) {
   .concept__texts {
     margin-top: 80px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -542,7 +546,7 @@ main {
   gap: 10px;
   padding-inline: 15px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
   .item__cards {
     margin-top: 20px;
     grid-template-columns: repeat(4, 1fr);
@@ -587,13 +591,18 @@ main {
   left: 0;
   bottom: 0;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
   overflow: hidden;
   border-radius: 0 0 10px 10px;
 }
 @media screen and (min-width: 768px) {
   .item-card__text {
-    font-size: 22px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 820px) {
+  .item-card__text {
+    font-size: 20px;
   }
 }
 .item-card__text.cake {
@@ -636,7 +645,7 @@ main {
 @media screen and (min-width: 768px) {
   .genre {
     margin-top: 70px;
-    margin-inline: 70px;
+    margin-inline: 55px;
   }
 }
 
@@ -703,12 +712,12 @@ main {
 }
 @media screen and (min-width: 768px) {
   .genre-card__text {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 820px) {
   .genre-card__text {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 .genre-card__text.event {
@@ -826,6 +835,7 @@ main {
 @media screen and (min-width: 768px) {
   .heading-contact {
     font-size: 60px;
+    font-weight: 450;
   }
 }
 
