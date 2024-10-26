@@ -873,17 +873,19 @@ main {
 
 .sub-menu__inner {
   margin-block: 40px;
-  margin-inline: 15px;
+
+
 }
 
 .sub-items {
   color: #ffff;
-  font-size: 20px;
+  font-size: 12px;
 
   @include mq(md) {
     display: flex;
     text-align: center;
     justify-content: center;
+    font-size: 18px;
   }
 }
 
@@ -893,17 +895,17 @@ main {
   justify-content: center;
 }
 
-.sub-items2 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
+
 
 .sub-item {
   position: relative;
-  padding: 5px 20px;
+  padding: 5px 12px;
   border: solid 1px #fff;
   background-color: rgba(255, 158, 228, 0.9);
+
+  @include mq(md) {
+    padding: 5px 20px;
+  }
 
   &:hover {
     background-color: rgba(255, 158, 228, 0.4);
@@ -1000,8 +1002,8 @@ main {
 
 .genre-sub__item {
   color: #ffff;
-  font-size: 15px;
-  padding: 5px 20px;
+  font-size: 12px;
+  padding: 5px;
   border: solid 1px #fff;
   background-color: rgba(255, 128, 232);
 
@@ -1012,6 +1014,10 @@ main {
   }
 
   @include mq(md) {
+    font-size: 17px;
+    padding: 5px 12px;
+  }
+  @include mq(lg) {
     font-size: 19px;
     padding: 5px 12px;
   }

@@ -2,7 +2,7 @@
 
     <main class="gallery_main">
       <nav class="gallery__sub-menu">
-        <div class="sub-menu__inner">
+        <div class="sub-menu__inner inner">
           <ul class="sub-items">
             <div class="sub-items1">
               <li class="sub-item">
@@ -19,8 +19,6 @@
               <li class="sub-item sub-item--type3">
                 <a href="<?php the_permalink(33); ?>" class="item_link">CUPCAKE</a>
               </li>
-            </div>
-            <div class="sub-items2">
               <li class="sub-item sub-item--type4">
                 <a href="<?php the_permalink(36); ?>" class="item_link">SEMI-ORDER</a>
               </li>

@@ -943,12 +943,11 @@ main {
 
 .sub-menu__inner {
   margin-block: 40px;
-  margin-inline: 15px;
 }
 
 .sub-items {
   color: white;
-  font-size: 20px;
+  font-size: 12px;
 }
 @media screen and (min-width: 768px) {
   .sub-items {
@@ -959,6 +958,7 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    font-size: 18px;
   }
 }
 
@@ -972,21 +972,16 @@ main {
           justify-content: center;
 }
 
-.sub-items2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .sub-item {
   position: relative;
-  padding: 5px 20px;
+  padding: 5px 12px;
   border: solid 1px #fff;
   background-color: rgba(255, 158, 228, 0.9);
+}
+@media screen and (min-width: 768px) {
+  .sub-item {
+    padding: 5px 20px;
+  }
 }
 .sub-item:hover {
   background-color: rgba(255, 158, 228, 0.4);
@@ -1084,8 +1079,8 @@ main {
 
 .genre-sub__item {
   color: white;
-  font-size: 15px;
-  padding: 5px 20px;
+  font-size: 12px;
+  padding: 5px;
   border: solid 1px #fff;
   background-color: rgb(255, 128, 232);
 }
@@ -1096,6 +1091,12 @@ main {
   transition: 0.5s;
 }
 @media screen and (min-width: 768px) {
+  .genre-sub__item {
+    font-size: 17px;
+    padding: 5px 12px;
+  }
+}
+@media screen and (min-width: 820px) {
   .genre-sub__item {
     font-size: 19px;
     padding: 5px 12px;
