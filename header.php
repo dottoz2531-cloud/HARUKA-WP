@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-
-    <meta property="og:title" content="Haruka kawaii shop" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://haruka-kawaii-shop.com/" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="Haruka kawaii shop" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:card" content="./img/shoplogo.png" />
+    <meta name="robots" content="" />
+    <title>Haruka kawaii shop</title>
+    <meta name="description" content="Haruka kawaii shop"/>
+    <head prefix="og:https://ogp.me/ns#">
+    <meta property=”og:site_name” content="Haruka kawaii shop" />
+    <meta property="og:title" content="Haruka kawaii shop"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://haruka-kawaii.dozzot.com/" />
+    <meta property="og:image" content="<?php echo get_template_directory_uri()?>/img/og-img.png" />
+    <meta property="og:description" content="Welcome to Haruka kawaii shop" />
 
     <link rel="icon" href="<?php echo get_template_directory_uri()?>/img/haruka-icon.PNG" />
 
