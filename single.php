@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_template_part('template-parts/header2'); ?>
 
     <main class="gallery_main">
       <nav class="gallery__sub-menu">

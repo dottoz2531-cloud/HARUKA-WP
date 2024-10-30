@@ -20,6 +20,31 @@ document
     });
   });
 
+//header2
+document
+  .querySelector("#js-drawer-button")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector("#js-drawer-button").classList.toggle("is-checked");
+    document.querySelector("#js-drawer-content2").classList.toggle("is-checked");
+  });
+
+document
+  .querySelectorAll('#js-drawer-content a[href^="#"]')
+  .forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      document
+        .querySelector("#js-drawer-button")
+        .classList.remove("is-checked");
+      document
+        .querySelector("#js-drawer-content2")
+        .classList.remove("is-checked");
+    });
+  });
+
+
+//swiper
 const intersectionObserver = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
