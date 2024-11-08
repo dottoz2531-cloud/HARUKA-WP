@@ -26,7 +26,7 @@ document
   .addEventListener("click", function (e) {
     e.preventDefault();
 
-    document.querySelector("#js-drawer-button").classList.toggle("is-checked");
+    document.querySelector("#js-drawer-button2").classList.toggle("is-checked");
     document.querySelector("#js-drawer-content2").classList.toggle("is-checked");
   });
 
@@ -38,11 +38,10 @@ document
         .querySelector("#js-drawer-button")
         .classList.remove("is-checked");
       document
-        .querySelector("#js-drawer-content2")
+        .querySelector("#js-drawer-content")
         .classList.remove("is-checked");
     });
   });
-
 
 //swiper
 const intersectionObserver = new IntersectionObserver(function (entries) {

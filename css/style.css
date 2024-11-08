@@ -649,7 +649,7 @@ main {
 @media screen and (min-width: 768px) {
   .genre {
     margin-top: 70px;
-    margin-inline: 55px;
+    margin-inline: 20px;
   }
 }
 

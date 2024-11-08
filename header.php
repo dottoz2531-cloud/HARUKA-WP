@@ -35,8 +35,7 @@
             ><img src="<?php echo get_template_directory_uri()?>/img/shoplogo.png" alt="Haruka kawaii shop"
           /></a>
         </h1>
-        <div class="header__items">
-          <button
+        <button
             id="js-drawer-button"
             type="button"
             class="header__icon drawer-icon"
@@ -45,7 +44,6 @@
             <span class="drawer-icon__bar"></span>
             <span class="drawer-icon__bar"></span>
           </button>
-        </div>
 
         <nav id="js-drawer-content" class="header__nav">
           <div class="drawer__items">
